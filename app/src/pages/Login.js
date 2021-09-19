@@ -9,9 +9,15 @@ export default class Login extends Component {
 
     componentDidMount(){
         var cookies = document.cookie.split("=")
-        if(cookies[1].length > 0){
+
+        if(document.cookie.split("=")[0] != 'token'){
+            document.cookie = `token=`
+        }
+
+        if(cookies[1] != undefined && cookies[1].length > 0){
             this.props.history.push('/');
         }
+        
     }
 
     handleChange = (e) => {

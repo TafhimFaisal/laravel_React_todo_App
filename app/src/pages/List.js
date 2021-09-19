@@ -8,9 +8,16 @@ export default class List extends Component {
     async componentDidMount(){
 
         var cookies = document.cookie.split("=")
-        if(cookies[1] == 0){
+
+        if( document.cookie.split("=")[0] != 'token' 
+            || cookies[1] == 0 || cookies[1] != undefined){
             this.props.history.push('/login');
         }
+
+        // if(cookies[1] != undefined && cookies[1].length > 0){
+        //     this.props.history.push('/login');
+        // }
+
         this.setState({token:document.cookie})
         try {
             let todos = await axios.get('http://127.0.0.1:8000/api/todo?'+document.cookie)
