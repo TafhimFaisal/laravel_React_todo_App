@@ -2,11 +2,11 @@
 ## Login Page
 ![](ss/login-page.PNG)
 
-## signup Page
+## Signup Page
 ![](ss/signup-page.PNG)
 
 ## List Page
 ![](ss/todolist-page.PNG)
 
-## edit Page
+## Edit Page
 ![](ss/edit-page.PNG)
