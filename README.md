@@ -2,7 +2,7 @@
 ## Installation
  ### Instruction 
  1. clone the project
- 2. than the name of the api/.env.example file to .env
+ 2. than rename api/.env.example file to .env
  3. cofigur database
  4. make sure you can access database
  
